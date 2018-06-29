@@ -1,0 +1,58 @@
+Hello here we will walk through steps which you need to perform indeed I performed while pushing my 1st PR to upstream project.
+
+1. Create github account. Verify your Email & login to your account.
+
+2. In search box on top left of github, search the project on which you wanted to submit the Pull Request.
+
+3. After your project appears in searched items, click on It and go into Upstream Project's Home Page(1st Page).
+
+4. Now you need to fork this project to create local copy for you.
+  -> Click Fork, Top right corner on github.
+  After project is forked, you can see your fav upstream project in your Repositories.
+    Your Profile -> Project
+5. Now its time to work on Linux console.
+
+6. Open terminal on your local machine & type in following commands.
+  Let upstream project name is test-proj.
+  # yum install git -y
+  
+  # git clone https://github.com/<your-github-account>/test-proj
+  
+  # cd test-proj
+  
+  # git branch
+  master       //We are on local master of our local clone
+  
+  # git checkout -b branch-1   //Lets create a branch inside master
+  
+  # git branch
+    //Go the file/files which you want to change. And do the code change
+    //Let you changed file1
+    
+# git diff
+   You should see the file/files which you changed
+
+# git log     //Lets check Log, See your PR is on top
+
+# git add file1
+
+# vim ./commit-message.txt      //Add commit message for your PR. This will help upstream committers to know what PR is about
+   Hello This is commit message for PR1
+
+# git commit -F /commit-message.txt
+
+# git push origin branch-1       //Push your changes to branch-1 which we created earlier
+
+7. Your work with Linux console is done. Go back to github.com > Your upstream Project. 
+   Here you will see your PR is showing to be pushed to upstream.
+   Click Preview, review the changes and Click Commit.
+   
+8. Go to upstream project's Pull Requests tab, you can see your PR on top of list.
+
+9. Now owner of Upstream Project will review your PR, will provide comments/change requests to you. 
+   You need to address them. We will discuss that in seperate thread.
+   
+Please getback in case of queries, other things.
+
+Generate PR if you want to change anything here.
+Thanks
